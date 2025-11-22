@@ -1,0 +1,7 @@
+Note 1 Information: Std_yrmax=-1 in starter, so no variance output for forecast quantities after endyr+1 
+Note 2 Information: settle_month is less than spawn_month, so logical age at settlement calculated to be: 1  for settle_time 1.  Does not match read value of 0 are you sure? 
+Warning 1 : At least one block pattern ends in endyr. Check the output parameter value time series to see if the values in forecast years are as intended.
+Warning 2 : Setting in starter does not request all priors, and 256 parameters have priors and are not estimated, so their prior not included in obj_fun.
+Warning 3 : Final gradient: 1.00829e-05 is larger than final_conv: 1e-05
+Note 3 Information: A revised protocol for the Fcast_yr specification is available and recommended.
+ 3 warnings  and 3 notes 
