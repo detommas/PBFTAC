@@ -1,3 +1,5 @@
-# PBFTAC
+# PBF TAC
 This repository provides the code to calculate an example TAC for Pacific Bluefin Tuna fleet segments for each of the specified candidate management procedure given an ASPM-R+ estimation model output and the 2015-2022 relative F agreed upon by the IATTC-NC JWG on PBF management, adjusted to meet an ECPO:WCPO impact ratio of 30:70 for HCRs 9:16 and 18.
 The repository is intended to be a code sharing and collaboration platform for all the members of the ISC Pacific Bluefin Working Group (PBFWG) that are working on testing the MSE TAC calculation. It is not for management purposes.
+# Running the code
+To calculate the TACs you need to clone this repository to your computer and then open the MP_generation.R script. At the start of the file you will specify on line 29 the EPO impact ratio to use (either 20 or 30). When you run the code the output is the TACout data frame, which specifies the TAC for candiate MPs 1-8, and 17 if you specified an epo impact of 20, or the TAC for candidate MPs 9-16, and 18 if you specified an epo impact of 30. Note that the HCRs in the TACout data frame are always labelled 1-8, and 17 even if run with th epo 30 impact ratio as the HCR shape is the same, only the impact ratio changes between MPs 1-8, 17 and MPs 9-16, 18.
